@@ -1,0 +1,22 @@
+-- Table pour stocker des objets de tout type
+CREATE TABLE IF NOT EXISTS objects (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  description TEXT
+);
+
+-- Table pour stocker les relations entre objets et utilisateurs
+CREATE TABLE IF NOT EXISTS relation (
+  id INTEGER PRIMARY KEY,
+  objects_id INTEGER,
+  user_id INTEGER,
+  FOREIGN KEY (objects_id) REFERENCES objects(id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Table pour stocker les informations des utilisateurs (admins)
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY,
+  user_name TEXT NOT NULL,
+  password TEXT NOT NULL
+);
