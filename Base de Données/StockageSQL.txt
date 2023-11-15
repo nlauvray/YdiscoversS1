@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS objects (
   description TEXT
 );
 
--- Table pour stocker les relations entre objets et utilisateurs
+-- Table pour stocker les relations entre objects et users
 CREATE TABLE IF NOT EXISTS relation (
   id INTEGER PRIMARY KEY,
   objects_id INTEGER,
@@ -14,9 +14,19 @@ CREATE TABLE IF NOT EXISTS relation (
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- Table pour stocker les informations des utilisateurs (admins)
+-- Table pour stocker les informations des users (admins)
 CREATE TABLE IF NOT EXISTS users (
   id INTEGER PRIMARY KEY,
   user_name TEXT NOT NULL,
   password TEXT NOT NULL
 );
+
+-- Insertion de données dans la table objects 
+INSERT INTO objects (name, description) VALUES 
+	('Montre Rolex Submariner', 'Montre de plongée haut de gamme de la marque Rolex.'),
+	('Montre Casio G-Shock', 'Montre résistante aux chocs et étanche de la marque Casio.'),
+	('Montre Apple Watch Series 6', 'Montre connectée d Apple avec suivi de la santé et fonctionnalités intelligentes.'),
+	('Montre Seiko Presage', 'Montre automatique élégante de la collection Presage de Seiko.'),
+	('Montre Tag Heuer Carrera', 'Montre de sport de luxe de la célèbre marque Tag Heuer.'),
+	('Montre Timex Expedition', 'Montre abordable et durable pour les activités de plein air.'),
+	('Montre Omega Speedmaster', 'Montre emblématique portée par les astronautes lors des missions lunaires.');
