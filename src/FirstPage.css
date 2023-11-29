@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.firstPage {
+  background-color: #0e0e0e;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainFirstPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+.montre {
+  height: 35vw;
+}
+
+.title {
+  font-size: 5vw;
+  color: #fff;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  position: absolute;
+  z-index: 1;
+}
