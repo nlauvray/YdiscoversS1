@@ -7,11 +7,35 @@
 }
 
 .infosPage {
-  background-color: #1e1e1e;
+  background-image: url("./img/expo.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.bannerInfos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-color: #0e0e0e;
+  opacity: 0.8;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
 }

@@ -5,8 +5,11 @@ import "./InfosPage.css";
 export const InfosPage = () => {
   return (
     <main className="infosPage">
-      <Address />
-      <History />
+      <div className="bannerInfos"></div>
+      <div className="infos">
+        <History />
+        <Address />
+      </div>
     </main>
   );
 };
