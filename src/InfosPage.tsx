@@ -4,6 +4,7 @@ import "./InfosPage.css";
 export const InfosPage = () => {
   return (
     <main className="infosPage">
+      <div className="backImg"></div>
       <div className="bannerInfos"></div>
       <div className="infos">
         <History />

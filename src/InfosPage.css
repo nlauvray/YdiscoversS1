@@ -7,9 +7,6 @@
 }
 
 .infosPage {
-  background-image: url("./img/expo.jpg");
-  background-size: cover;
-  opacity: 0.5;
   background-position: center;
   height: 100vh;
   width: 100%;
@@ -17,6 +14,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.backImg {
+  background-image: url("./img/expo.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
 }
 
 .bannerInfos {
