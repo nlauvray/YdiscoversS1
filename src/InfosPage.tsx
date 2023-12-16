@@ -3,7 +3,7 @@ import { History } from "./History";
 import "./InfosPage.css";
 export const InfosPage = () => {
   return (
-    <main className="infosPage">
+    <main className="infosPage" id="infos">
       <div className="backImg"></div>
       <div className="bannerInfos"></div>
       <div className="infos">
