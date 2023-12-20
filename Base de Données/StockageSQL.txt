@@ -5,6 +5,9 @@ CREATE TABLE IF NOT EXISTS objects (
   description TEXT
 );
 
+
+
+
 -- Table pour stocker les relations entre objects et users
 CREATE TABLE IF NOT EXISTS relation (
   id INTEGER PRIMARY KEY,
@@ -21,12 +24,382 @@ CREATE TABLE IF NOT EXISTS users (
   password TEXT NOT NULL
 );
 
+
+
+
 -- Insertion de données dans la table objects 
-INSERT INTO objects (name, description) VALUES 
-	('Montre Rolex Submariner', 'Montre de plongée haut de gamme de la marque Rolex.'),
-	('Montre Casio G-Shock', 'Montre résistante aux chocs et étanche de la marque Casio.'),
-	('Montre Apple Watch Series 6', 'Montre connectée d Apple avec suivi de la santé et fonctionnalités intelligentes.'),
-	('Montre Seiko Presage', 'Montre automatique élégante de la collection Presage de Seiko.'),
-	('Montre Tag Heuer Carrera', 'Montre de sport de luxe de la célèbre marque Tag Heuer.'),
-	('Montre Timex Expedition', 'Montre abordable et durable pour les activités de plein air.'),
-	('Montre Omega Speedmaster', 'Montre emblématique portée par les astronautes lors des missions lunaires.');
+INSERT INTO
+    objects (name, description)
+VALUES
+    (
+        'Montre Rolex Submariner',
+        'Montre de plongée haut de gamme de la marque Rolex.'
+    ),
+    (
+        'Montre Casio G-Shock',
+        'Montre résistante aux chocs et étanche de la marque Casio.'
+    ),
+    (
+        'Montre Apple Watch Series 6',
+        'Montre connectée d Apple avec suivi de la santé et fonctionnalités intelligentes.'
+    ),
+    (
+        'Montre Seiko Presage',
+        'Montre automatique élégante de la collection Presage de Seiko.'
+    ),
+    (
+        'Montre Tag Heuer Carrera',
+        'Montre de sport de luxe de la célèbre marque Tag Heuer.'
+    ),
+    (
+        'Montre Timex Expedition',
+        'Montre abordable et durable pour les activités de plein air.'
+    ),
+    (
+        'Montre Omega Speedmaster',
+        'Montre emblématique portée par les astronautes lors des missions lunaires.'
+    ),
+    (
+        'Montre Citizen Eco-Drive',
+        'Montre solaire élégante de la gamme Eco-Drive de Citizen.'
+    ),
+    (
+        'Montre Fossil Gen 6',
+        'Montre intelligente de dernière génération de la marque Fossil.'
+    ),
+    (
+        'Montre Tissot Le Locle',
+        'Montre automatique suisse classique de Tissot.'
+    ),
+    (
+        'Montre Garmin Forerunner 945',
+        'Montre GPS de sport avancée pour les coureurs de Garmin.'
+    ),
+    (
+        'Montre Bulova Precisionist',
+        'Montre à quartz de haute précision de la marque Bulova.'
+    ),
+    (
+        'Montre Panerai Luminor',
+        'Montre italienne de luxe connue pour son style distinctif.'
+    ),
+    (
+        'Montre Movado Museum Classic',
+        'Montre emblématique de Movado avec un cadran minimaliste.'
+    ),
+    (
+        'Montre Audemars Piguet Royal Oak',
+        'Montre suisse de luxe avec un design audacieux.'
+    ),
+    (
+        'Montre Swatch Sistem51',
+        'Montre automatique révolutionnaire avec seulement 51 composants.'
+    ),
+    (
+        'Montre Hamilton Khaki Field',
+        'Montre de style militaire robuste de la marque Hamilton.'
+    ),
+    (
+        'Montre Longines Master Collection',
+        'Montre suisse élégante de la collection Master de Longines.'
+    ),
+    (
+        'Montre Patek Philippe Nautilus',
+        'Montre de luxe de Patek Philippe avec un design emblématique.'
+    ),
+    (
+        'Montre Casio F91W',
+        'Montre numérique classique et abordable de Casio.'
+    ),
+    (
+        'Montre Rado True Thinline',
+        'Montre suisse ultramince et légère de Rado.'
+    ),
+    (
+        'Montre Citizen Promaster',
+        'Montre de plongée professionnelle de Citizen.'
+    ),
+    (
+        'Montre Orient Bambino',
+        'Montre habillée élégante de la collection Bambino d''Orient.'
+    ),
+    (
+        'Montre Vacheron Constantin Patrimony',
+        'Montre de haute horlogerie suisse de Vacheron Constantin.'
+    ),
+    (
+        'Montre Timex Waterbury',
+        'Montre vintage inspirée du patrimoine de Timex.'
+    ),
+    (
+        'Montre Seiko 5',
+        'Montre automatique abordable de la série 5 de Seiko.'
+    ),
+    (
+        'Montre Omega Seamaster',
+        'Montre de plongée iconique de la collection Seamaster d''Omega.'
+    ),
+    (
+        'Montre Hamilton Jazzmaster',
+        'Montre élégante de la collection Jazzmaster de Hamilton.'
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS objects (
+  id INTEGER PRIMARY KEY,
+  nom TEXT NOT NULL,
+  description TEXT,
+  categorie_prix TEXT,
+  categorie_redirection TEXT,
+  prix INTEGER,
+  site TEXT
+);
+
+
+
+    INSERT
+    OR REPLACE INTO objects (
+        nom,
+        description,
+        categorie_prix,
+        categorie_redirection,
+        prix,
+        site
+    )
+VALUES
+    (
+        'Montre Rolex Submariner',
+        'Montre de plongée haut de gamme de la marque Rolex.',
+        'Luxe',
+        'rolex.com',
+        9050,
+        'https://rolex.com'
+    ),
+    (
+        'Montre Casio G-Shock',
+        'Montre résistante aux chocs et étanche de la marque Casio.',
+        'Abordable',
+        'casio.com',
+        100,
+        'https://casio.com'
+    ),
+    (
+        'Montre Apple Watch Series 6',
+        'Montre connectée d''Apple avec suivi de la santé et fonctionnalités intelligentes.',
+        'Haut de gamme',
+        'apple.com',
+        350,
+        'https://apple.com'
+    ),
+    (
+        'Montre Seiko Presage',
+        'Montre automatique élégante de la collection Presage de Seiko.',
+        'Intermédiaire',
+        'seiko.com',
+        460,
+        'https://seiko.com'
+    ),
+    (
+        'Montre Tag Heuer Carrera',
+        'Montre de sport de luxe de la célèbre marque Tag Heuer.',
+        'Luxe',
+        'tagheuer.com',
+        6500,
+        'https://tagheuer.com'
+    ),
+    (
+        'Montre Timex Expedition',
+        'Montre abordable et durable pour les activités de plein air.',
+        'Abordable',
+        'timex.com',
+        100,
+        'https://timex.com'
+    ),
+    (
+        'Montre Omega Speedmaster',
+        'Montre emblématique portée par les astronautes lors des missions lunaires.',
+        'Luxe',
+        'omega.com',
+        15000,
+        'https://omega.com'
+    ),
+    (
+        'Montre Citizen Eco-Drive',
+        'Montre solaire élégante de la gamme Eco-Drive de Citizen.',
+        'Intermédiaire',
+        'citizen.com',
+        450,
+        'https://citizen.com'
+    ),
+    (
+        'Montre Fossil Gen 6',
+        'Montre intelligente de dernière génération de la marque Fossil.',
+        'Haut de gamme',
+        'fossil.com',
+        330,
+        'https://fossil.com'
+    ),
+    (
+        'Montre Tissot Le Locle',
+        'Montre automatique suisse classique de Tissot.',
+        'Intermédiaire',
+        'tissot.com',
+        645,
+        'https://tissot.com'
+    ),
+    (
+        'Montre Garmin Forerunner 945',
+        'Montre GPS de sport avancée pour les coureurs de Garmin.',
+        'Haut de gamme',
+        'garmin.com',
+        320,
+        'https://garmin.com'
+    ),
+    (
+        'Montre Bulova Precisionist',
+        'Montre à quartz de haute précision de la marque Bulova.',
+        'Luxe',
+        'bulova.com',
+        400,
+        'https://bulova.com'
+    ),
+    (
+        'Montre Panerai Luminor',
+        'Montre italienne de luxe connue pour son style distinctif.',
+        'Luxe',
+        'panerai.com',
+        101000,
+        'https://panerai.com'
+    ),
+    (
+        'Montre Movado Museum Classic',
+        'Montre emblématique de Movado avec un cadran minimaliste.',
+        'Luxe',
+        'movado.com',
+        400,
+        'https://movado.com'
+    ),
+    (
+        'Montre Audemars Piguet Royal Oak',
+        'Montre suisse de luxe avec un design audacieux.',
+        'Luxe',
+        'audemarspiguet.com',
+        85000,
+        'https://audemarspiguet.com'
+    ),
+    (
+        'Montre Swatch Sistem51',
+        'Montre automatique révolutionnaire avec seulement 51 composants.',
+        'Abordable',
+        'swatch.com',
+        240,
+        'https://swatch.com'
+    ),
+    (
+        'Montre Hamilton Khaki Field',
+        'Montre de style militaire robuste de la marque Hamilton.',
+        'Intermédiaire',
+        'hamilton.com',
+        625,
+        'https://hamilton.com'
+    ),
+    (
+        'Montre Longines Master Collection',
+        'Montre suisse élégante de la collection Master de Longines.',
+        'Intermédiaire',
+        'longines.com',
+        4150,
+        'https://longines.com'
+    ),
+    (
+        'Montre Patek Philippe Nautilus',
+        'Montre de luxe de Patek Philippe avec un design emblématique.',
+        'Luxe',
+        'patek.com',
+        549000,
+        'https://patek.com'
+    ),
+    (
+        'Montre Casio F91W',
+        'Montre numérique classique et abordable de Casio.',
+        'Abordable',
+        'casio.com',
+        20,
+        'https://casio.com'
+    ),
+    (
+        'Montre Rado True Thinline',
+        'Montre suisse ultramince et légère de Rado.',
+        'Haut de gamme',
+        'rado.com',
+        2350,
+        'https://rado.com'
+    ),
+    (
+        'Montre Citizen Promaster',
+        'Montre de plongée professionnelle de Citizen.',
+        'Intermédiaire',
+        'citizen.com',
+        350,
+        'https://citizen.com'
+    ),
+    (
+        'Montre Orient Bambino',
+        'Montre habillée élégante de la collection Bambino d''Orient.',
+        'Intermédiaire',
+        'orient.com',
+        260,
+        'https://orient.com'
+    ),
+    (
+        'Montre Vacheron Constantin Patrimony',
+        'Montre de haute horlogerie suisse de Vacheron Constantin.',
+        'Luxe',
+        'vacheron.com',
+        34700,
+        'https://vacheron.com'
+    ),
+    (
+        'Montre Timex Waterbury',
+        'Montre vintage inspirée du patrimoine de Timex.',
+        'Abordable',
+        'timex.com',
+        250,
+        'https://timex.com'
+    ),
+    (
+        'Montre Seiko 5',
+        'Montre automatique abordable de la série 5 de Seiko.',
+        'Abordable',
+        'seiko.com',
+        220,
+        'https://seiko.com'
+    ),
+    (
+        'Montre Omega Seamaster',
+        'Montre de plongée iconique de la collection Seamaster d''Omega.',
+        'Luxe',
+        'omega.com',
+        6600,
+        'https://omega.com'
+    ),
+    (
+        'Montre Hamilton Jazzmaster',
+        'Montre élégante de la collection Jazzmaster de Hamilton.',
+        'Intermédiaire',
+        'hamilton.com',
+        995,
+        'https://hamilton.com'
+    );
