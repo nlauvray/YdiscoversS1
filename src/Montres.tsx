@@ -3,7 +3,7 @@ import "./Montres.css";
 
 export const MontresPage = () => {
   return (
-    <main className="montresPage">
+    <main className="montresPage" id="montres">
       <h2 className="titleMontres">MONTRES</h2>
       <div className="cards">
         <Card />

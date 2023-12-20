@@ -6,7 +6,7 @@ export const Address = () => {
       <div>
         <p className="text">
           <span>Tel : 02 02 02 02 02</span>
-          <span>Adresse : 6 boulvard de Paris, 44000 Nantes</span>
+          <span>Adresse : 6 boulevard de Paris, 44000 Nantes</span>
         </p>
       </div>
     </main>
