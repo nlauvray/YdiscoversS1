@@ -1,5 +1,5 @@
-import { Address } from "./Address";
-import { History } from "./History";
+import { Address } from "./Address/Address";
+import { History } from "./History/History";
 import "./InfosPage.css";
 export const InfosPage = () => {
   return (

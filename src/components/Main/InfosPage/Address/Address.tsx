@@ -1,4 +1,4 @@
-import "./History.css";
+import "../History/History.css";
 export const Address = () => {
   return (
     <main className="history">

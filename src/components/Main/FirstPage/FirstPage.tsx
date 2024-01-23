@@ -1,5 +1,5 @@
-import montre from "./img/montre_base.png";
-import { Nav } from "./Nav";
+import montre from "../../../img/montre_base.png";
+import { Nav } from "../../Nav/Nav";
 import "./FirstPage.css";
 
 export const FirstPage = () => {

@@ -1,17 +1,12 @@
-import React from "react";
 import "./App.css";
-import { FirstPage } from "./FirstPage";
-import { InfosPage } from "./InfosPage";
-import { MontresPage } from "./Montres";
+import Main from "./components/Main/Main";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="body">
-      <FirstPage />
-      <InfosPage />
-      <MontresPage />
+      <Main />
     </div>
   );
-}
+};
 
 export default App;

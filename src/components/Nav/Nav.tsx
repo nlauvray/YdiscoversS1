@@ -1,5 +1,6 @@
-import logo from "./img/logo.png";
+import logo from "../../img/logo.png";
 import "./Nav.css";
+
 export const Nav = () => {
   return (
     <nav className="nav">

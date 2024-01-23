@@ -4,11 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
-.firstPage {
-  background-color: #0e0e0e;
-  height: 100vh;
+.montresPage {
+  background-position: center;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,21 +16,17 @@
   align-items: center;
 }
 
-.mainFirstPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 100%;
-}
-.montre {
-  height: 35vw;
-}
-
-.title {
-  font-size: 5vw;
+.titleMontres {
+  font-size: 15rem;
   color: #fff;
-  position: absolute;
-  z-index: 1;
+}
+
+.cards {
+  width: 92.375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
