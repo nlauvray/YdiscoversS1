@@ -5,8 +5,7 @@ export const InfosPage = () => {
   return (
     <main className="infosPage" id="infos">
       <div className="backImg"></div>
-      <div className="bannerInfos"></div>
-      <div className="infos">
+      <div className="bannerInfos">
         <History />
         <Address />
       </div>

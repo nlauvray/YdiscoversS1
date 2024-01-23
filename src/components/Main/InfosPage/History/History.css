@@ -4,9 +4,15 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  height: 60vh;
-  width: 50%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: #0e0e0e;
   position: relative;
+  border-radius: 10px;
 }
 
 .history .title {

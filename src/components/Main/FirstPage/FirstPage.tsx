@@ -5,6 +5,7 @@ import "./FirstPage.css";
 export const FirstPage = () => {
   return (
     <main className="firstPage">
+      <div className="separation"></div>
       <Nav />
       <div className="mainFirstPage">
         <img src={montre} className="montre" alt="montre" />
