@@ -16,7 +16,7 @@
 }
 
 .history .title {
-  font-size: 2.2rem;
+  font-size: 2.2vw;
   color: #fff;
   position: relative;
 }
@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
   margin: 2rem;
   gap: 1rem;
   color: #fff;
