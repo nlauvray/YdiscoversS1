@@ -19,7 +19,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-/* ----- Routes Api ----- */
+/* ----- Route Api ----- */
 app.get("/api/getWatches", (req, res) => {
   db.all("SELECT * FROM objects", (err, rows) => {
     if (err) {
@@ -30,17 +30,6 @@ app.get("/api/getWatches", (req, res) => {
     }
   });
 });
-
-// app.get("/api/getWatches/:id", (req, res) => {
-//   db.get("SELECT * FROM montre WHERE id = ?", [req.params.id], (err, row) => {
-//     if (err) {
-//       console.error(err);
-//       res.status(500).send("Erreur serveur");
-//     } else {
-//       res.json(row);
-//     }
-//   });
-// });
 
 // Démarrer le serveur
 app.listen(port, () => {
