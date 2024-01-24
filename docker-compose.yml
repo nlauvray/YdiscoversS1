@@ -1,25 +1,27 @@
 version: '3'
 
-services: # Mise en place des différents services
-  sqlite: # BDD Sqlite
-    image: sqlite3:latest # Image
-    command: node server
+services:
+  sqlite:
+    image: sqlite:lasted
+    command: node server.js
     volumes:
-      - /BDD:/StockageSQL
+      - /Back/BDD
     restart: always
     environment:
-      - SQLITE_PATH=/BDD/BDD.sql
+      - SQLITE_PATH=/Back/BDD/BDD.sql
     expose:
       - "3001"
-  react: # Site React Typescript
+
+  react:
     image: "node:14-alpine"
     volumes:
-      - /app-react:/StockageDocker
+      - /app-react:/src/StockageDocker
     ports:
       - "3000:80"
     restart: always
     environment:
       - NODE_ENV=development
+
 volumes:
   StockageSQL:
   StockageDocker:
