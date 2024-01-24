@@ -22,7 +22,7 @@ Et profitez du site !
 - Docker Compose
 - Sqlite
 
-## ⚠️ Attention le docker n'est pas affecté au projet mais le fichier de recherche son présent de le dossier `Docker` ! ⚠️
+## ⚠️ Attention la docker n'est pas affectée au projet mais les fichiers de recherches son présent du dossier `Docker` ! ⚠️
 
 ## 📚 Auteurs
 
