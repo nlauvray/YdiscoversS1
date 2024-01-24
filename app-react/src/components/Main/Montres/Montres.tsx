@@ -13,8 +13,6 @@ export const MontresPage = () => {
       .catch((error) =>
         console.error("Erreur lors de la récupération des données:", error)
       );
-    console.log(data);
-    console.log(data.length);
   }, []);
   return (
     <main className="montresPage" id="montres">
