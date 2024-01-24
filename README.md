@@ -30,7 +30,7 @@ Et profitez du site !
 - `Matthieu Caron`
 - `Noa Lauvray`
 
-## ✨ liste des fonctionnalités
+## ✨ Liste des fonctionnalitées
 
 - Affichage des données dans le site
 - Affichage des détails de chaque montre dans un page annexe à la carte de la montre
