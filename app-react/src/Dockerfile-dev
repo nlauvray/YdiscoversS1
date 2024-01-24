@@ -1,0 +1,10 @@
+FROM node:16.13.1
+
+WORKDIR /app-react/src
+COPY package*.json ./
+COPY nodemon.json ./
+COPY tsconfig.json ./
+
+EXPOSE 3000
+
+CMD yarn start
