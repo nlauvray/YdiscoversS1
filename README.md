@@ -4,7 +4,7 @@
 
 ## 📝 Description
 
-Ce projet est un site web qui permet de visualiser les super héros de l'agence Superhero relier à une API. Il est possible de voir les détails des super héros que l'on a créés, d'en ajouter et de les supprimer.
+L’Heurloger est un site vitrine de montres en tout genre.
 
 ## 📦 Installation
 
