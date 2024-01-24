@@ -8,27 +8,23 @@ export const MontresPage = () => {
 
   useEffect(() => {
     axios
-      .get("/api/getWatches")
+      .get("http://localhost:3001/api/getWatches")
       .then((response) => setData(response.data))
       .catch((error) =>
         console.error("Erreur lors de la récupération des données:", error)
       );
+    console.log(data);
+    console.log(data.length);
   }, []);
   return (
     <main className="montresPage" id="montres">
       <h2 className="titleMontres">MONTRES</h2>
       <div className="cards">
-        {/* {data.length == 0 ? (
+        {data.length == 0 ? (
           <p className="">Aucune montres</p>
         ) : (
           data.map((watch) => <Card info={watch} />)
-        )} */}
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        )}
       </div>
     </main>
   );
